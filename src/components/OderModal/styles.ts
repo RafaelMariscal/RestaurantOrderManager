@@ -18,6 +18,7 @@ export const ModalBody = styled.div`
   width: 100%;
   max-width: 480px;
   padding: 2rem ;
+  border-radius: .5rem;
 
   header{
     display: flex;
@@ -115,4 +116,33 @@ export const OderDetails = styled.div`
       opacity: 0.8
     }
   }
+`;
+
+export const Actions = styled.footer`
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+
+  button{
+    border: 0;
+    border-radius: 3rem;
+    color: #fff;
+    padding: .75rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .primary{
+    background-color: #333;
+    gap: .5rem;
+  }
+
+  .secondary{
+    margin-top: .75rem;
+    padding: .75rem 1.5rem;
+    background: transparent;
+    color: #D73035;
+    font-weight: bold;
+  }
+
 `;
