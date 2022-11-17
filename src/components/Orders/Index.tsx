@@ -44,7 +44,7 @@ export function Orders() {
         orders={[]}
       />
       <OrdersBoard
-        icon="🧑🏻✅"
+        icon="✅"
         title="Pronto!"
         orders={[]}
       />

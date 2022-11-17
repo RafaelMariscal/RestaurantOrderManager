@@ -10,7 +10,7 @@ flex: 1;
   align-items: center;
   justify-content: center;
 
-  header{
+  > header{
     padding: .5rem;
     font-size: .875rem;
     display: flex;
