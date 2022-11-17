@@ -61,5 +61,58 @@ export const OderDetails = styled.div`
      opacity: 0.8;
   }
 
+  .order-items {
+    margin-top: 1rem;
 
+    .item{
+      display: flex;
+      align-items: center;
+      & + .item{
+        margin-top: 1rem;
+      }
+
+      img{
+        width: 3rem;
+        height: 2.5rem;
+        object-fit: cover;
+        border-radius: .375rem;
+      }
+
+      .quantity{
+        align-self: self-start;
+        font-size: .875rem;
+        color:#666;
+        display: block;
+        min-width: 1.25rem;
+        margin-left: .75rem ;
+      }
+
+      .product-details{
+        margin-left: .25rem;
+
+        strong{
+          display:block;
+          margin-bottom: .25rem;
+        }
+
+        span{
+          font-size: .875rem;
+          color: #666;
+        }
+      }
+
+    }
+  }
+  .total{
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+
+    span{
+      font-size: .875rem;
+      opacity: 0.8
+    }
+  }
 `;
