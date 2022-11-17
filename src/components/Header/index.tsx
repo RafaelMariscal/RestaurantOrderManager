@@ -9,9 +9,8 @@ export function Header() {
           <h1>Pedidos</h1>
           <h2>Acompanhe o pedido dos clientes</h2>
         </div>
+        <img src={logo} alt="" />
       </Content>
-
-      <img src={logo} alt="" />
     </Container>
   );
 }
