@@ -1,8 +1,10 @@
 import { useState } from "react";
+import { toast } from "react-toastify";
 import { Order } from "../../types/Order";
 import { api } from "../../utils/api";
 import { OrderModal } from "../OderModal";
 import { Board, OrdersContainer } from "./styles";
+
 
 interface OrdersBoardProps {
   icon: string;
@@ -28,7 +30,9 @@ export function OrdersBoard({ icon, title, orders, onCancelOreder }: OrdersBoard
 
   async function handleCancelOrder() {
     setIsLoading(true);
-    await api.delete(`/orders/${selectedOrder?._id}`);
+    await api.delete(`/orders/${selectedOrder!._id}`);
+    toast.success(`Pedido da mesa ${selectedOrder!.table} cancelado!`);
+
     setIsLoading(false);
     onCancelOreder(selectedOrder!._id);
     setIsModalVisible(false);
